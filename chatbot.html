@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ✅ Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('quotes')">Motivational Quotes</a></li>
+            <li><a href="#" onclick="showSection('flappy-bird')">Flappy Bird</a></li>
+            <li><a href="#" onclick="showSection('reminders')">Reminders</a></li>
+            <li><a href="#" onclick="showSection('about-us')">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Home Section -->
+    <section id="home" class="content">
+        <h1>Welcome to Motivational Hub</h1>
+        <p>Your daily dose of motivation, games, and productivity tools.</p>
+        
+        <!-- Chatbot Section -->
+        <div class="chat-container">
+            <div class="chat-header">Chat with AI</div>
+            
+            <div class="quote-container">
+                "Believe in yourself. Every journey begins with a single step."
+            </div>
+
+            <div class="chat-messages" id="chat-messages"></div>
+            
+            <div class="chat-input-container">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Motivational Quotes Section -->
+    <section id="quotes" class="content">
+        <h1>Motivational Quotes</h1>
+        <p id="quote">Click the button to get a motivational quote!</p>
+        <button onclick="generateQuote()">Get Quote</button>
+    </section>
+
+    <!-- ✅ Flappy Bird Section -->
+    <section id="flappy-bird" class="content">
+        <h1>Flappy Bird</h1>
+        <iframe src="https://flappybird.io/" width="600" height="400"></iframe>
+    </section>
+
+    <!-- ✅ Reminders Section -->
+    <section id="reminders" class="content">
+        <h1>Task Reminders</h1>
+        <input type="text" id="reminderInput" placeholder="Enter your reminder...">
+        <button onclick="addReminder()">Add Reminder</button>
+        <ul id="reminderList"></ul>
+    </section>
+
+    <!-- ✅ About Us Section (Replacing FYP) -->
+    <section id="about-us" class="content">
+        <h1>About Us</h1>
+        <p>
+            Welcome to <strong>Motivational Hub</strong>, your one-stop destination for daily inspiration, engaging games, 
+            and productivity-enhancing tools. Our platform is built for individuals seeking motivation, 
+            positivity, and a well-balanced approach to achieving their goals.
+        </p>
+        <p>
+            Whether you're looking for a <strong>quick motivational boost</strong>, an <strong>interactive game</strong> to refresh your mind, 
+            or a <strong>smart reminder system</strong> to keep track of your tasks, Motivational Hub is here to help. 
+            Join us on a journey of <strong>self-improvement and success</strong> today!
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
